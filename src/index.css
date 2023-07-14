@@ -5,9 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("https://cdnb.artstation.com/p/assets/images/images/016/306/011/large/trung-nguyen-bg-halloween.jpg?1551686543");
+  background-size: cover;
+  background-position: centers;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card {
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in;
+}
+
+.card img {
+  height: 100px;
+}
+
+.revert-card {
+  animation: .8s revert-card ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes revert-card {
+
+  0%,
+  70% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.card img {
+  transform: scale(0);
+}
+
+.show-card {
+  animation: .8s showCard ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showCard {
+
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
