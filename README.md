@@ -1,6 +1,6 @@
 # Getting Started
-This is a simple project for our studies, we have to create a memory game with a framework js
-i decide to dev with react js
+This is a simple project for our studies, we have to create a memory game with a framework js <br>
+I decide to dev with react js
 
 ## Start Project
 
